@@ -1,0 +1,149 @@
+@font-face{
+	font-family: Sarabun;
+	src: url(font/Sarabun.ttf);
+}
+
+
+/*Have nothing in the style sheet have any margin or padding by default - easier to work with. */ 
+*{
+	
+	margin: 0px;
+	padding: 0px;
+
+	font-family: Sarabun;
+
+}
+
+#map{
+
+	position: absolute;
+	overflow: hidden;
+
+	/*height: 200vh;*/
+	width: 100%;
+}
+
+#appTitle{
+	font-weight: bold;
+	font-size: 4.7em;
+	text-decoration: underline;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.presentationSection{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	margin-bottom: 50px;
+}
+
+.sectionText{
+	/*width: 100%;*/
+	flex: 1 1 300px;
+
+	margin-right: 20px;
+}
+
+.sectionDescription{
+	font-size: 1.3em;
+}
+
+.presentationScreenshots{
+	display: inline-flex;
+	justify-content: space-around;
+	flex: 10 2 900px;
+	margin: 10px;
+	flex-wrap: wrap;
+}
+
+.screenshot{
+
+	height: 400px;
+	
+	align-self: center;
+
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 15px;
+
+	
+}
+
+#decorationGradient{
+
+	position: absolute;
+	display: inline;
+
+	width: 20%;
+	height: 30%;
+	z-index: 3;
+
+	background: linear-gradient(180deg, rgba(20, 81, 94, 0.5) 0%, rgba(20, 81, 94, 0) 100%);
+
+
+}
+
+#glassTextPane{
+
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	margin-left: 20%;
+	background: rgba(255, 255, 255, 0.7);
+	/*-webkit-backdrop-filter: blur(10px);	
+	backdrop-filter: blur(10px);*/
+	
+	width: fill;
+	height: 118vh;
+	z-index: 3;
+
+}
+
+@media screen and (max-width: 700px){
+
+	#appTitle{
+		text-align: center;
+	}
+
+	#decorationGradient{
+		display: block;
+		width: 100%;
+		height: 150px;
+	}
+
+	#glassTextPane{
+
+		/* Have the gap showing the map clearly be at the top pf the screen, rather than the left.*/
+		margin-left: 0;
+		margin-top: 200px;
+		width: 82%
+		height: 770px;
+
+	}
+
+}
+
+@media screen and (max-width: 400px){
+
+
+	h2{
+		font-size: 9vw;
+	}
+
+	.sectionDescription{
+		font-size: 6vw;
+	}
+
+	.screenshot{
+		width: 85%;
+		height: auto;
+	}
+
+}

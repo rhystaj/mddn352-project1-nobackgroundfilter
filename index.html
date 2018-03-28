@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		
+		<title>go'round Presentation</title>
+
+		<!-- Acesses the Google Maps API -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXWpgLUDeG3u0R5wXkwB-gTYiyNJSPhJg&callback=myMap" type="text/javascript"></script>
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- The script that embeds the map -->
+		<script type = "text/javascript" src="Map Embed.js"></script>
+
+		<!-- A script that makes some basic adjustment to improve layout, that couldn't be achieve soley with css -->
+		<script type = "text/javascript" src="Adjustments.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="Project 1 Style - Not Glassy.css">
+			
+		</style>
+	</head>
+
+	<body>
+
+		<!-- The embeded Google Map; essentially serves as the background of the frame. -->
+		
+
+		<div id=decorationGradient></div>
+
+		<div id = "glassTextPane">
+			
+			<h1 id="appTitle">go'round</h1>
+			
+			<div class = "presentationSection">	
+				
+				<div class="sectionText">
+					<h2>Locals make the best guides</h2>
+					<p class="sectionDescription">Want a day out, but don't know where to start? Create a profile specifying your interests and request a day out, tailored to your requirements. Then, let someone who feels they know the area well guide you to places you may have never known about.</br>
+					</br>
+					Give them live feedback, so they adjust the day even further to accommodate you.
+					</p>
+				</div>
+
+				<div class = "presentationScreenshots">
+					<img src="screenshots/Client Map View (Mobile).png" class = "screenshot">
+					<img src="screenshots/Client Rating View (Mobile).png" class = "screenshot">
+				</div>
+
+			</div>
+
+			<div class = "presentationSection">
+
+				<div class="sectionText">
+					<h2>Put your knowledge to the test</h2>
+					<p class="sectionDescription"> How well do you really know a city? Answer a request from other users for an outing and plan a series of activities for them based on thier specifications.</br>
+					</br>
+					Browse events in the area, suggest activities to the assigned users, track thier location in real-time and recieve feedback as they complete your suggested activities. Data such as budget and time will be tracked to help you stay within the specifications.</br>
+					</br>
+					The user feedback will be accumulated into a final score.
+					</p>
+				</div>
+
+				<div class = "presentationScreenshots">
+					<img src="screenshots/Guide Map View (Mobile).png" class = "screenshot">
+					<img src="screenshots/Guide Event Planner View (Mobile).png" class = "screenshot">
+					<img src="screenshots/Guide Event Browser (Mobile).png" class = "screenshot">
+				</div>
+
+			</div>
+		
+		</div>
+
+		<div id = "map"></div>
+		
+	</body>
+
+
+</html>
